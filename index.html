@@ -6,7 +6,6 @@
     <title>Fight Pokemon</title>
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
-
 <body>
     <!-- Screen welcome -->
     <div class="mapWater">
@@ -14,13 +13,14 @@
         <div class="choosePlayer">
             <div class="prayerRight">
                 <div class="profile">
-                    <a class href="https://pokemondb.net/pokedex/kingdra"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-shiny/kingdra.gif" alt="Kingdra"></a>
+                    <a href="https://pokemondb.net/pokedex/kingdra"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/kingdra.gif" alt="Kingdra" id="mirrorHippo"></a>
                     <div class="infos">
                         <ul>
                             <li>Name : Hippo</li>
                             <li>Life Score : 100</li>
                             <li>Attack Score : 45</li>
                         </ul>
+                        <button><p>Choose me!</p></button>
                     </div>
                 </div>
 
@@ -29,9 +29,10 @@
                     <div class="infos">
                         <ul>
                             <li>Name : Shark</li>
-                            <li>Life Score : 100</li>
-                            <li>Attack Score : 45</li>
+                            <li>Life Score : 120</li>
+                            <li>Attack Score : 85</li>
                         </ul>
+                        <button><p>NO choose the best</p></button>
                     </div>
                 </div>
             </div>
@@ -42,49 +43,57 @@
                     <div class="infos">
                         <ul>
                             <li>Name : Mouth</li>
-                            <li>Life Score : 100</li>
-                            <li>Attack Score : 45</li>
+                            <li>Life Score : 180</li>
+                            <li>Attack Score : 75</li>
                         </ul>
+                        <button><p>Pick me OR I'll eat you</p></button>
                     </div>
                 </div>
 
                 <div class="profile">
-                    <a href="https://pokemondb.net/pokedex/torkoal"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-shiny/torkoal.gif" alt="Torkoal"></a>
+                    <a href="https://pokemondb.net/pokedex/torkoal"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/torkoal.gif" alt="Torkoal"></a>
                     <div class="infos">
                         <ul>
                             <li>Name : Turtle</li>
-                            <li>Life Score : 100</li>
-                            <li>Attack Score : 45</li>
+                            <li>Life Score : 280</li>
+                            <li>Attack Score : 35</li>
                         </ul>
+                        <button><p>Please me !</p></button>
                     </div>
                 </div>
             </div>
-   
         </div>
-
     </div>
 
     <!-- Characters -->
     <section class="battleWater">
-        <div class="characters">
-            <div class="hippo"> 
-                <a href="https://pokemondb.net/pokedex/kingdra"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-shiny/kingdra.gif" alt="Kingdra"></a>
+        <div class="allContainfight">
+            <div class="btnMenu">
+                <button id="backMenu">Menu</button>
             </div>
- 
-            <div class="shark">
-                <a href="https://pokemondb.net/pokedex/sharpedo"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/sharpedo.gif" alt="Sharpedo"></a>
-            </div>
+            <div class="characters">
+                <div class="hippo pokemon left"> 
+                    <a href="https://pokemondb.net/pokedex/kingdra"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/kingdra.gif" alt="Kingdra" id="mirrorHippo"></a>
+                    <div class="progressBar" value="100"></div>
+                </div>
+    
+                <div class="shark pokemon right">
+                    <a href="https://pokemondb.net/pokedex/sharpedo"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/sharpedo.gif" alt="Sharpedo"></a>
+                    <div class="progressBar" value="120"></div>
+                </div>
 
-            <div class="mouth">
-                <a href="https://pokemondb.net/pokedex/exploud"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/exploud.gif" alt="Exploud"></a>
-            </div>
+                <div class="mouth pokemon right">
+                    <a href="https://pokemondb.net/pokedex/exploud"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/exploud.gif" alt="Exploud"></a>
+                    <div class="progressBar" value="160"></div>
+                </div>
 
-            <div class="turtle">
-                <a href="https://pokemondb.net/pokedex/torkoal"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-shiny/torkoal.gif" alt="Torkoal"></a>
-
+                <div class="turtle pokemon left">
+                    <a href="https://pokemondb.net/pokedex/torkoal"><img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/torkoal.gif" alt="Torkoal"></a>                    <div class="progressBar" value="80"></div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="./public/js/main.js"></script>
+
+    <script type="module" src="./public/js/main.js"></script>
 </body>
 </html>

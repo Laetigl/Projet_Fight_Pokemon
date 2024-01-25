@@ -14,15 +14,19 @@ body{
     flex-direction: column;
 }
 
+.screenone  {
+    display: none;
+}
+
 h1{
     margin: 0;
     width: 100%;
-    height: 20%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     color:rgb(54, 50, 50);
-    font-size: 60px;
+    font-size: 65px;
     text-shadow: 3px 3px 2px black;
 }
 
@@ -38,39 +42,139 @@ h1{
     display: flex;
     justify-content: center;
     width:400px;
-    height:150px;
+    height:180px;
     border:5px dotted rgb(47, 36, 36);
     background-color: rgba(39, 36, 36, 0.558);
-}
-
-.prayerRight{
-    display: flex;
-    gap:15px;
-}
-
-.prayerLeft{
-    display: flex;
-    gap:15px;
-}
-
-.profile a {
-    display: flex;
-    justify-content: center;
-}
-
-.profile a img {
-    width: 60px;
-    height: auto;
 }
 
 .infos{
     color:white;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.infos button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(21, 20, 20, 0.558);
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.infos button p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.prayerRight{
+    display: flex;
+    gap:30px;
+}
+
+.prayerLeft{
+    display: flex;
+    gap:30px;
+}
+
+.profile a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile a img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* Battle screen */
 
+
+.battleWater{
+    display: none;
+    width:100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(11, 53, 51, 0.5), rgba(18, 93, 105, 0.5)), url(../src/img/beautiful-water-view-anime-style_23-2151080248.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.allContainfight{
+    width: 100%;
+    height:100vh;
+    gap:450px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.btnMenu{
+    display: flex;
+    justify-content: center;
+    width:20%
+}
+.battleWater button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 80px;
+    background-color: rgba(9, 9, 9, 0.558);
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+
 .characters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    height:470px;
+}
+
+.right{
+    width: 200px;
+    height:auto
+}
+
+.right img{
+    width: 140px;
+    height: auto;
+}
+
+.left{
+    width: 200px;
+    height:auto
+}
+
+.left img{
+    width: 140px;
+    height: auto;
+}
+
+/* Class "hide" to apply to remove section */
+.hide{
     display: none;
 }
