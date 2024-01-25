@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.mapWater{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../src/img/treasuremap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(54, 50, 50);
+    font-size: 60px;
+    text-shadow: 3px 3px 2px black;
+}
+
+.choosePlayer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    gap:20px
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    width:400px;
+    height:150px;
+    border:5px dotted rgb(47, 36, 36);
+    background-color: rgba(39, 36, 36, 0.558);
+}
+
+.prayerRight{
+    display: flex;
+    gap:15px;
+}
+
+.prayerLeft{
+    display: flex;
+    gap:15px;
+}
+
+.profile a {
+    display: flex;
+    justify-content: center;
+}
+
+.profile a img {
+    width: 60px;
+    height: auto;
+}
+
+.infos{
+    color:white;
+    font-size: 20px;
+}
+
+
+/* Battle screen */
+
+.characters{
+    display: none;
+}
