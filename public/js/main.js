@@ -1,24 +1,22 @@
 import * as INSTANCES from './module/instances.js'
 import * as CLASS from './module/class.js'
 
+//Sound
+let sound = document.querySelector("audio")
+sound.volume=0
+
 //Boutons accueil
 let chooseBtnHippo = document.querySelectorAll(".infos button")[0] //boutons 4 choix
 let chooseBtnShark = document.querySelectorAll(".infos button")[1] //boutons 4 choix
 let chooseBtnMouth = document.querySelectorAll(".infos button")[2] //boutons 4 choix
 let chooseBtnTurtle = document.querySelectorAll(".infos button")[3] //boutons 4 choix
 
-//Image
-let hippoImg = document.querySelector(".hippo")
-let sharkImg = document.querySelector(".shark")
-let mouthImg = document.querySelector(".mouth")
-let turtleImg = document.querySelector(".turtle")
-
-let newRandom = []
-
 //Ecrans
 let screenOne= document.querySelector(".mapWater") //ecran 1
 let screenTwo = document.querySelector(".battleWater") //ecran 2
 let backMenu = document.querySelector(".battleWater button") //bouton menu
+let backGame = document.querySelector(".gameOver button")
+let screenGameOver = document.querySelector(".gameOver")
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -65,16 +63,12 @@ chooseBtnHippo.addEventListener('click', ()=>{
     let mean 
     switch (perso[0]){
         case INSTANCES.shark:
-            // mechantImg.src = INSTANCES.shark.imageBack
             mean = INSTANCES.shark
-
             break
         case INSTANCES.turtle:
-            // mechantImg.src = INSTANCES.turtle.imageBack
             mean = INSTANCES.turtle
             break
         case INSTANCES.mouth:
-            // mechantImg.src = INSTANCES.mouth.imageBack
             mean = INSTANCES.mouth
             break 
     }
@@ -85,30 +79,12 @@ chooseBtnHippo.addEventListener('click', ()=>{
     arrayAttack.forEach(element => {
         element.classList.add('hide')
     });
-
-    // btnOne[0].addEventListener('click', () =>{
-    //         console.log("hello");
-    //         INSTANCES.hippo.wings(mean)
-    //         console.log(mean.pv);
-    //     }) 
-    //     btnTwo[0].addEventListener('click', () =>{
-    //         INSTANCES.hippo.corns(mean)
-    //         console.log(mean.pv);
-    //     }) 
-    //     btnThree[0].addEventListener('click', () =>{
-    //         INSTANCES.hippo.kick(mean)
-    //         console.log(mean.pv);
-    //     }) 
-    //     btnFour[0].addEventListener('click', () =>{
-    //         INSTANCES.hippo.angryEyes(mean)
-    //         console.log(mean.pv);
-    //     }) 
     
     let messageScore = document.querySelector(".frame")
 
     let attackhippo = [btnOne[0],btnTwo[0],btnThree[0],btnFour[0]]
 
-    // let listAttackShark = [teeth(ennemy),speed(ennemy),laser(ennemy),swallow(ennemy)]
+    // let listAttackShark = [teeth(),speed(),laser(),swallow()]
 
     attackhippo.forEach(element => {
         element.addEventListener("click",()=>{
@@ -116,6 +92,7 @@ chooseBtnHippo.addEventListener('click', ()=>{
                 mean.pv = 0
                 alert("stop")
                 screenTwo.style.display="none";
+                screenGameOver.style.display="block"
 
             } else if(mean.pv > 0){
                 switch (element) {
@@ -126,6 +103,7 @@ chooseBtnHippo.addEventListener('click', ()=>{
                         messageScore.innerHTML = (`Hippo a utilisé son attaque "wings". Il reste : ${mean.pv} de pv à l'ennemi`)
                         break;
                         //fonction attaque du boss
+
 
                     case btnTwo[0]:
                         INSTANCES.hippo.corns(mean)
@@ -276,6 +254,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                 mean.pv = 0
                 alert("stop")
                 screenTwo.style.display="none";
+                screenGameOver.style.display="block"
 
             } else if(mean.pv > 0){
                 switch (element) {
@@ -364,6 +343,8 @@ chooseBtnMouth.addEventListener('click', ()=>{
                 mean.pv = 0
                 alert("stop")
                 screenTwo.style.display="none";
+                screenGameOver.style.display="block"
+
 
             } else if(mean.pv > 0){
                 switch (element) {
@@ -452,6 +433,7 @@ attackturtle.forEach(element => {
                 mean.pv = 0
                 alert("stop")
                 screenTwo.style.display="none";
+                screenGameOver.style.display="block"
 
             } else if(mean.pv > 0){
                 switch (element) {
@@ -496,4 +478,9 @@ attackturtle.forEach(element => {
 //Bouton retour au menu
 backMenu.addEventListener('click', ()=>{
     location.reload() //refresh the page (go back to menu)
+})
+
+backGame.addEventListener('click', () =>{
+    location.reload() //refresh the page (go back to menu)
+
 })
