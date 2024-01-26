@@ -1,15 +1,17 @@
 export class WaterCharacters{
-    constructor(nom,pv,pa){
+    constructor(nom,pv,pa,imageFront,imageBack){
         this.nom = nom
         this.pv = pv
         this.pa = pa
+        this.imageFront = imageFront
+        this.imageBack = imageBack
     }
 }
 
 //HIPPO
 export class Hippo extends WaterCharacters {
-    constructor(nom,pv,pa){
-        super(nom,pv,pa)
+    constructor(nom,pv,pa,imageFront,imageBack){
+        super(nom,pv,pa,imageFront,imageBack)
     }
         //Attaque 1
         wings(ennemy){
@@ -42,8 +44,8 @@ export class Hippo extends WaterCharacters {
 
 //SHARK
 export class Shark extends WaterCharacters {
-    constructor(nom,pv,pa){
-        super(nom,pv,pa)
+    constructor(nom,pv,pa,imageFront,imageBack){
+        super(nom,pv,pa,imageFront,imageBack)
     }
     //Attaque 1
     teeth(ennemy){
@@ -74,10 +76,11 @@ export class Shark extends WaterCharacters {
     }
 }
 
+
 //MOUTH
 export class Mouth extends WaterCharacters {
-    constructor(nom,pv,pa){
-        super(nom,pv,pa)
+    constructor(nom,pv,pa,imageFront,imageBack){
+        super(nom,pv,pa,imageFront,imageBack)
     }
 
     //Attaque 1
@@ -110,8 +113,8 @@ export class Mouth extends WaterCharacters {
 
 //TURTLE
 export class Turtle extends WaterCharacters {
-    constructor(nom,pv,pa){
-        super(nom,pv,pa)
+    constructor(nom,pv,pa,imageFront,imageBack){
+        super(nom,pv,pa,imageFront,imageBack)
     }
 
     fume(ennemy){
