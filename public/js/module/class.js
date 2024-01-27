@@ -1,10 +1,11 @@
 export class WaterCharacters{
-    constructor(nom,pv,pa,imageFront,imageBack){
+    constructor(nom,pv,pa,imageFront,imageBack,){
         this.nom = nom
         this.pv = pv
         this.pa = pa
         this.imageFront = imageFront
         this.imageBack = imageBack
+        
     }
 }
 
@@ -14,28 +15,28 @@ export class Hippo extends WaterCharacters {
         super(nom,pv,pa,imageFront,imageBack)
     }
         //Attaque 1
-        wings(ennemy){
+        attackOne(ennemy){
             if (this.pv >0) {
                 ennemy.pv -= this.pa + Math.floor(this.pa/100 *10)
             }
         } ;
 
         //Attaque 2
-        corns(ennemy){
+        attackTwo(ennemy){
             if (this.pv >0) {
                 ennemy.pv -= this.pa
             }
         } ;
 
         //Attaque 3
-        kick(ennemy){
+        attackThree(ennemy){
             if (this.pv >0) {
                 ennemy.pv -= this.pa + Math.floor(this.pa/100 *25)
             }
         } ;
 
         //Attaque 4
-        angryEyes(ennemy){
+        attackFour(ennemy){
             if (this.pv >0) {
                 ennemy.pv -= this.pa + Math.floor(this.pa/100 *40)
             }
@@ -48,28 +49,28 @@ export class Shark extends WaterCharacters {
         super(nom,pv,pa,imageFront,imageBack)
     }
     //Attaque 1
-    teeth(ennemy){
+    attackOne(ennemy){
         if (this.pv >0) {
             ennemy.pv -= this.pa + Math.floor(this.pa/100 *35)
         }
     }
 
     //Attaque 2
-    speed(ennemy){
+    attackTwo(ennemy){
         if (this.pv >0) {
             ennemy.pv -= this.pa + Math.floor(this.pa/100 *50)
         }
     }
 
     //Attaque 3
-    laser(ennemy){
+    attackThree(ennemy){
         if (this.pv >0) {
             ennemy.pv -= this.pa *3
         }
     }
 
     //Attaque 4
-    swallow(ennemy){
+    attackFour(ennemy){
         if (this.pv >0) {
             ennemy.pv -= this.pa *2 + Math.floor(this.pa/100 *10)
         }
@@ -84,27 +85,27 @@ export class Mouth extends WaterCharacters {
     }
 
     //Attaque 1
-    vomit(ennemy){
+    attackOne(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa *2 + Math.floor(this.pa/100 *40)
         }
     }
     //Attaque 2
-    muscle(ennemy){
+    attackTwo(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa *3
         }
     }
 
     //Attaque 3
-    flyingTeeth(ennemy){
+    attackThree(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa *2 + Math.floor(this.pa/100 *10)
         }
     }
 
     //Attaque 4
-    eathquake(ennemy){
+    attackFour(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa *4 + Math.floor(this.pa/100 *20)
         }
@@ -117,25 +118,25 @@ export class Turtle extends WaterCharacters {
         super(nom,pv,pa,imageFront,imageBack)
     }
 
-    fume(ennemy){
+    attackOne(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa + Math.floor(this.pa/100 *25)
         }
     }
 
-    step(ennemy){
+    attackTwo(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa + Math.floor(this.pa/100 *30)
         }
     }
 
-    toxicAir(ennemy){
+    attackThree(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa *2 + Math.floor(this.pa/100 *10)
         }
     }
 
-    carapace(ennemy){
+    attackFour(ennemy){
         if (this.pv>0) {
             ennemy.pv -= this.pa + Math.floor(this.pa/100 *7)
         }
