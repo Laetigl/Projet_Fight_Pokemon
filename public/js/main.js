@@ -486,7 +486,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 0:
                                     mean.attackOne(INSTANCES.shark)
                                     console.log("1");
-                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -499,7 +499,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 1:
                                     mean.attackTwo(INSTANCES.shark)
                                     console.log("2");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -513,7 +513,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 2:
                                     mean.attackThree(INSTANCES.shark)
                                     console.log("3");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -526,7 +526,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 3:
                                     mean.attackFour(INSTANCES.shark)
                                     console.log("4");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -563,7 +563,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 0:
                                     mean.attackOne(INSTANCES.shark)
                                     console.log("1");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -576,7 +576,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 1:
                                     mean.attackTwo(INSTANCES.shark)
                                     console.log("2");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -590,7 +590,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 2:
                                     mean.attackThree(INSTANCES.shark)
                                     console.log("3");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -603,7 +603,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 3:
                                     mean.attackFour(INSTANCES.shark)
                                     console.log("4");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -639,7 +639,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 0:
                                     mean.attackOne(INSTANCES.shark)
                                     console.log("1");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -652,7 +652,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 1:
                                     mean.attackTwo(INSTANCES.shark)
                                     console.log("2");
-                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -666,7 +666,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 2:
                                     mean.attackThree(INSTANCES.shark)
                                     console.log("3");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -679,7 +679,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 3:
                                     mean.attackFour(INSTANCES.shark)
                                     console.log("4");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -720,7 +720,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 0:
                                     mean.attackOne(INSTANCES.shark)
                                     console.log("1");
-                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -733,7 +733,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 1:
                                     mean.attackTwo(INSTANCES.shark)
                                     console.log("2");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -747,7 +747,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 2:
                                     mean.attackThree(INSTANCES.shark)
                                     console.log("3");
-                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML = (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
@@ -760,7 +760,7 @@ chooseBtnShark.addEventListener('click', ()=>{
                                 case 3:
                                     mean.attackFour(INSTANCES.shark)
                                     console.log("4");
-                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life socre for Shark`)
+                                    messageScore.innerHTML =  (`${mean.nom} used his attack.There is ${INSTANCES.shark.pv} life score for Shark`)
                                     life = Math.round((INSTANCES.shark.pv / INSTANCES.shark.pvMax)*100)                        
                                     console.log(life);
                                     progress.style.width=life +"%"
