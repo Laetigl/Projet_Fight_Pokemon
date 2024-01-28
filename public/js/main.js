@@ -1,9 +1,11 @@
 import * as INSTANCES from './module/instances.js'
 import * as CLASS from './module/class.js'
 
-//Sound
-let sound = document.querySelector("audio")
-sound.volume = 0.2
+function sound() {
+    INSTANCES.music.loop = true
+    INSTANCES.music.volume = 0.2
+    INSTANCES.music.play()
+}
 
 //Welcome bouton
 let chooseBtnHippo = document.querySelectorAll(".infos button")[0] //boutons 4 choix
@@ -51,6 +53,7 @@ let barEnnemy = document.querySelector(".progresEnnemy")
 //-------------------------------------------------------------------------------
 //Bouton 1 : Hippo
 chooseBtnHippo.addEventListener('click', ()=>{
+    sound()
     screenTwo.style.display="block";
     screenOne.classList.add("hide")
     gentilDiv.setAttribute("class","gentil")
@@ -423,6 +426,7 @@ chooseBtnHippo.addEventListener('click', ()=>{
 
 //Bouton 2 : SHARK
 chooseBtnShark.addEventListener('click', ()=>{
+    sound()
     screenTwo.style.display="block";
     screenOne.classList.add("hide")
     gentilImg.src = INSTANCES.shark.imageFront
@@ -782,6 +786,7 @@ chooseBtnShark.addEventListener('click', ()=>{
 
 //Bouton 3 : Mouth
 chooseBtnMouth.addEventListener('click', ()=>{
+    sound()
     screenTwo.style.display="block";
     screenOne.classList.add("hide")
     gentilImg.src = INSTANCES.mouth.imageFront
@@ -1138,6 +1143,7 @@ chooseBtnMouth.addEventListener('click', ()=>{
 
 //Bouton 4 : Turtle
 chooseBtnTurtle.addEventListener('click', ()=>{
+    sound()
     screenTwo.style.display="block";
     screenOne.classList.add("hide")
     gentilImg.src = INSTANCES.turtle.imageFront
