@@ -1,9 +1,17 @@
+@font-face {
+    font-family: "PixelUn";
+    src: url(../src/font/Pixel.TTF);
+}
+*{
+    font-family: "PixelUn";
+}
+
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Audiowide', sans-serif;
+    font-family: "PixelUn"
 }
 
 .mapWater{
@@ -21,7 +29,7 @@ body{
     display: none;
 }
 
-h1{
+.welcomeTitle{
     margin: 0;
     width: 100%;
     height: 25%;
@@ -30,7 +38,6 @@ h1{
     align-items: center;
     color:rgb(54, 50, 50);
     font-size: 70px;
-    /* font-family: 'Audiowide', sans-serif; */
     text-shadow: 3px 3px 2px rgb(187, 171, 171);
 }
 
@@ -39,7 +46,7 @@ h1{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;  
-    gap:20px
+    gap:25px
 }
 
 .profile{
@@ -47,8 +54,8 @@ h1{
     justify-content: center;
     align-items: center;
     gap:10px;
-    width:400px;
-    height:180px;
+    width:410px;
+    height:200px;
     border:5px dotted rgb(47, 36, 36);
     background-color: rgba(39, 36, 36, 0.558);
 }
@@ -79,14 +86,13 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 40px;
+    width: 230px;
+    height: 55px;
     background-color: rgba(21, 20, 20, 0.558);
     border-style: none;
     border-radius: 20px;
     cursor: pointer;
-    font-family: 'Audiowide', sans-serif;
-
+    font-family: "PixelUn"
 }
 
 .infos button p{
@@ -94,6 +100,7 @@ li{
     font-size: 15px;
     margin: 0;
     text-align: center;
+    line-height: 25px;
 }
 
 .prayerRight{
@@ -125,11 +132,7 @@ li{
     align-items: center;
 }
 
-
-
 /* Battle screen */
-
-
 .battleWater{
     display: none;
     width:100vw;
@@ -142,14 +145,6 @@ li{
     opacity: 1;
 }
 
-/* .allContainfight{
-    width: 100vw;
-    height:100vh;
-    gap:450px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .btnMenu{
     display: flex;
@@ -171,49 +166,38 @@ li{
     cursor: pointer;
     color: white;
     font-size: 30px;
-    font-family: 'Audiowide', sans-serif;
+    font-family: "PixelUn";
 
 }
 
 /* 4 Boutons attaques */
 .attacks{
-    width: 350px;
+    width: 480px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap:10px;
     position: absolute;
-    top:500px;
-    right:200px;
+    top:530px;
+    right:70px;
 
 }
 
 .attacks button{
-    width: 150px;
+    width: 230px;
     height: 60px;
     background-color: aquamarine;
     border-style: none;
     border: 3px solid black;
     border-radius: 20px;
     font-size: 20px;
-    font-family: 'Audiowide', sans-serif;
+    font-family: "PixelUn";
     gap:10px;
 }
 
 .attacks button{
     cursor: pointer;
 }
-
-/* .characters{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:180px;
-    width:100%;
-    height:100vh !important;
-    /* padding-top: 150px; */
-/* } */ */
 
 .right{
     width: 200px;
@@ -243,7 +227,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px dotted rgb(212, 211, 140);
+    border: 5px dotted rgb(232, 173, 83);
     padding:25px;
     border-radius: 50%;
 }
@@ -258,7 +242,7 @@ li{
     height: 200px;
     position :absolute;
     top: 420px;
-    left: 200px; 
+    left: 150px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,16 +251,82 @@ li{
 .ennemy > img {
     height: 200px;
 }
-
-.damageEnnemy{
+.powerGentil{
     animation: damage forwards;
-    animation-duration: 0.5s;
+    animation-duration: 0.5s ;
+    animation-iteration-count: infinite; 
+}
+
+.damage{
+    animation: damage forwards;
+    animation-duration: 0.5s ;
+    animation-iteration-count: infinite;
 }
 
 @keyframes damage {
-    0% {margin-left:10px}
-    50% {margin-left:20px}
-    100%{margin-left:10px}
+    0% {margin-left:0px}
+    25% {margin-left:50px}
+    50% {margin-left:100px}
+    75% {margin-left:50px}
+    100%{margin-left:0px}
+}
+
+.moving{
+    animation: power forwards;
+    animation-duration: 0.5s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes power {
+    0% {margin-right:0px}
+    25% {margin-right:15px}
+    50% {margin-right:30px}
+    75% {margin-right:15px}
+    100%{margin-right:0px}
+}
+.progressBar{
+    display: block;
+    flex-direction: column;
+    width:120px;
+    height: 40px;
+    background-color: rgba(211, 196, 196, 0.64);
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    top: 380px;
+    right: 270px; 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progres{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.progressBarEnnemy{
+    display: block;
+    flex-direction: column;
+    width:120px;
+    height: 40px;
+    background-color: rgba(211, 196, 196, 0.64);
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 100px;
+    left: 220px; 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progresEnnemy{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    border-radius: 20px;
+
 }
 
 .frame{
@@ -284,13 +334,15 @@ li{
 }
 
 .message{
-    border:10px solid rgb(21, 27, 75);
+    border:10px solid rgb(42, 58, 175);
+    background-color: rgb(17, 20, 39);
+    line-height: 30px;
     padding:15px;
     position: absolute;
     bottom:100px;
     right: 600px;
-    width: 300px;
-    height: 100px;
+    width: 340px;
+    height: 140px;
     color:white;
     font-size: 20px;
 }
@@ -304,7 +356,7 @@ li{
 
 .gameOver{
     background-color: grey;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../src/img/samuel-enslin-180227-jow-dsv-volcano-v06.jpg);
+    background-image: url(../src/img/samuel-enslin-180227-jow-dsv-volcano-v06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -316,16 +368,26 @@ li{
 }
 
 .over{
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgba(32, 29, 29, 0.726);
     color:rgb(125, 17, 17);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    animation: bouncing 1s ease infinite alternate;
+    animation-name:boom ;
+    margin:0;
+    font-size: 70px;
+}
+
+@keyframes boom{
+    0% {transform:translateY(2px);font-size:30px};
+    100% {transform: translateY(-60px); font-size:50px;};
 }
 
 .champion{
     background-color: grey;
-    background-image: linear-gradient(to bottom, rgba(187, 164, 164, 0.5), rgba(0, 0, 0, 0.5)), url(../src/img/win.webp);
+    background-image: url(../src/img/win.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -337,10 +399,20 @@ li{
 }
 
 .win{
-    background-color: rgba(0, 0, 0, 0.726);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30%;
+    font-size: 50px;
+    color: white;
+    margin:0;
+    animation: bouncing 1s ease infinite alternate;
+    animation-name:winning ;
+}
+
+@keyframes winning{
+    0% {transform:translateY(2px);font-size:30px};
+    100% {transform: translateY(-60px); font-size:50px;};
 }
 
 audio{
